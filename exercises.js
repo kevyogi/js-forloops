@@ -120,7 +120,7 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 
 var oopsArray = ["turn", ,"down", ,"for", ,"what"];
 for(i = 0; i<oopsArray.length; i++){
-	if(i % 2 === undefined){
+	if(i % 2 !== 0){
 		oopsArray.splice(i, 1, "nope");
 	}
 }
