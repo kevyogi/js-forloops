@@ -217,8 +217,18 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 
 */
 
+var miscStorage = [[], "Carrots", 9, "Beets", {}, {name: "Todd B."}, "Mush"];
 
-
+function generateArrayOfStrings(storage){
+	var newArray = [];
+	for(i=0; i<storage.length; i++){
+		if(typeof storage[i]=="string"){
+			newArray.push(storage[i]);
+		}
+	}
+	return newArray;
+}
+console.log(generateArrayOfStrings(miscStorage));
 /* 13) All Grown Up 
 Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each And Every Highway. But More, Much More Than This. I Did It My Way."  
 */
